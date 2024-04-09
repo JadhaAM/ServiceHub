@@ -1,0 +1,59 @@
+.Popular__contaner{
+    width: 100%;
+    min-height: 40rem;
+    padding: 1rem ;
+}
+
+.card__box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+    padding: 1rem 2rem;
+}
+
+.bg_img{
+    width: 100%;
+    padding: 6rem ;
+    background-image: url("../../assets/img/recently-salmon-sushi.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+}
+.cards{
+    width: 100%;
+    background-color: white;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var( --normal-font-size);
+    gap: 1.5rem;
+}
+
+.icons{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:765px) {
+    .card__box{
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 2.5rem;
+        padding: 1rem 2rem;
+    }
+}

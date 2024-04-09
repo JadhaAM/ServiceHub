@@ -1,0 +1,75 @@
+.recently__contane{
+    width: 90%;
+    min-height: 40rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home__title{
+ padding:0.5rem  1rem;
+ padding-left: 5rem;
+ display: flex;
+ align-items: flex-start;
+ justify-content: center;
+ flex-direction: column;
+ gap: 1rem;
+}
+.home__title >h3{
+    font-size: var( --biggest-font-size);
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: var( --biggest-font-size);
+    gap: 0.5rem;
+}
+
+.home__title >p{
+    font-size: var(  --normal-font-size);
+}
+.recent_subLogoImg{
+    width: 3rem;
+    height: 3rem;
+    background-image: url("../../assets/img/spinach-leaf.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    padding: 10px  15px;
+    background-color:orange;
+    border-radius: 10px;
+    color: var(--body-color);
+    gap: 1rem;
+}
+
+.recently__hero_img{
+    width: 100%;
+    padding: 0.5rem 1rem ;
+    background-image: url("../../assets/img/recently-salmon-sushi.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+}
+
+@media screen and (max-width:765px) {
+   .recently__contane{
+        grid-template-columns: 1fr;
+        
+    }
+    .recently__hero_img{
+        padding: 9rem ;
+       
+    }
+}

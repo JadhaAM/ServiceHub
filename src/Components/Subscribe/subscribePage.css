@@ -1,0 +1,87 @@
+.newsletter__contaner{
+    width: 90%;
+    height: 30rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var( --title-color);
+    border-radius: 5rem;
+}
+
+.home__title{
+ padding:0.5rem  1rem;
+ padding-left: 5rem;
+ display: flex;
+ align-items: flex-start;
+ justify-content: center;
+ flex-direction: column;
+ gap: 1rem;
+}
+.home__title >.home__sub__title,.colur{
+    font-style: var( --title-font);
+    font-size: var( --normal-font-size);
+    color: var(--body-color);
+}
+
+.input__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1% 1% ;
+    font-size: var( --normal-font-size);
+   background-color: #fff;
+   border-radius: 1rem;
+}
+
+input{
+    padding: 1% 1% ;
+    border: none;
+    font-size: var(--normal-font-size);
+    color: var(--title-color);
+}
+
+.s_btn{
+    display: flex;
+    align-items: center;
+    padding: 1% 1% ;
+    background-color:orange;
+    border-radius: 1rem;
+    color: var(--body-color);
+    gap: 1rem;
+}
+.home__title >p{
+    font-size: var(  --normal-font-size);
+}
+.about__subLogoImg{
+    width: 3rem;
+    height: 3rem;
+    background-image: url("../../assets/img/about-sushi-title.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.newsletter__hero_img{
+    width: 100%;
+    padding: 0.5rem 1rem ;
+    background-image: url("../../assets/img/newsletter-sushi.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+}
+
+@media screen and (max-width:765px) {
+    .newsletter__contaner{
+        grid-template-columns: 1fr;
+        padding: 0 ;
+    }
+
+    .home__title{
+        padding:0.5rem;
+       }
+}
